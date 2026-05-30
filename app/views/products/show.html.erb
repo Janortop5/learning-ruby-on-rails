@@ -1,4 +1,5 @@
 # <%# app/views/products/show.html.erb %>
+<%= render "inventory", product: @product %>
 <% cache @product do %>
     <h1><%= @product.name %></h1>
     <%= @product.description %> 
